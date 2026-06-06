@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coco Chalet — Guide des invités</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       STICKY HEADER
+  ═══════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <span class="header-name" data-chalet-name="Coco Chalet">Coco Chalet</span>
+      <nav class="pill-bar" aria-label="Navigation rapide">
+        <a href="#wifi-card" class="pill">📶 WiFi</a>
+        <a href="#contacts-card" class="pill">📞 Contacts</a>
+        <a href="#depart" class="pill">🚪 Départ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Bienvenue">
+      <div class="hero-content">
+        <h1 class="hero-title" data-chalet-name="Coco Chalet">Coco Chalet</h1>
+        <p class="hero-subtitle">Lac Dufresne · Sainte-Lucie-des-Laurentides</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 1 — ARRIVÉE
+    ═══════════════════════════════════════════════════ -->
+    <section class="content-section" id="arrivee" aria-labelledby="arrivee-heading">
+      <div class="section-inner">
+        <h2 id="arrivee-heading" class="section-heading">
+          <span class="section-icon" aria-hidden="true">🏡</span> Arrivée
+        </h2>
+
+        <ol class="checklist" id="checklist-arriving" aria-label="Checklist d'arrivée">
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="arriving-1" />
+              <span class="checklist-text">
+                Récupère les clés dans le boîtier sur la porte du garage
+                <span class="checklist-note">Contacte Romain ou Sébastien pour le code d'accès</span>
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="arriving-2" />
+              <span class="checklist-text">
+                Désactive l'alarme
+                <span class="checklist-note">Contacte Romain ou Sébastien pour le code d'alarme</span>
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="arriving-3" />
+              <span class="checklist-text">Couvre la caméra</span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="arriving-4" />
+              <span class="checklist-text">Connecte la pompe à eau et la lampe UV</span>
+            </label>
+          </li>
+        </ol>
+
+        <!-- WiFi Card -->
+        <div class="info-card wifi-card" id="wifi-card">
+          <div class="info-card-header">
+            <span class="info-card-icon" aria-hidden="true">📶</span>
+            <h3 class="info-card-title">WiFi</h3>
+          </div>
+          <dl class="wifi-details">
+            <div class="wifi-row">
+              <dt>Réseau</dt>
+              <dd class="wifi-value">Coco Chalet</dd>
+            </div>
+            <div class="wifi-row">
+              <dt>Mot de passe</dt>
+              <dd class="wifi-password" id="wifi-password">12345678</dd>
+            </div>
+          </dl>
+          <button class="copy-btn" data-copy="12345678" aria-label="Copier le mot de passe WiFi">
+            Copier le mot de passe
+          </button>
+        </div>
+
+        <!-- Contacts Card -->
+        <div class="info-card contacts-card" id="contacts-card">
+          <div class="info-card-header">
+            <span class="info-card-icon" aria-hidden="true">📞</span>
+            <h3 class="info-card-title">Contacts</h3>
+          </div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <span class="contact-name">Romain</span>
+              <a href="tel:5148039533" class="contact-tel">514-803-9533</a>
+            </li>
+            <li class="contact-item">
+              <span class="contact-name">Sébastien</span>
+              <a href="tel:5145736740" class="contact-tel">514-573-6740</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 2 — DÉPART
+    ═══════════════════════════════════════════════════ -->
+    <section class="content-section section-alt" id="depart" aria-labelledby="depart-heading">
+      <div class="section-inner">
+        <h2 id="depart-heading" class="section-heading">
+          <span class="section-icon" aria-hidden="true">🚪</span> Départ
+        </h2>
+
+        <ol class="checklist" id="checklist-departing" aria-label="Checklist de départ">
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-1" />
+              <span class="checklist-text">
+                Passe l'aspirateur central
+                <span class="checklist-note">Chambre du milieu, tube sous le lit. Produits ménagers sous l'évier de cuisine et de salle de bain.</span>
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-2" />
+              <span class="checklist-text">
+                Débranche la pompe et la lampe UV
+                <span class="checklist-note">Coupe l'eau — salle mécanique, sous-sol gauche</span>
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-3" />
+              <span class="checklist-text">
+                Coupe l'eau au robinet de sortie de la pompe et au chauffe-eau
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-4" />
+              <span class="checklist-text">Vérifie que tous les thermostats sont à 10°C</span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-5" />
+              <span class="checklist-text">
+                Mets les poubelles au bord du chemin
+                <span class="checklist-note">Collecte le lundi matin vers 8h</span>
+              </span>
+            </label>
+          </li>
+          <li class="checklist-item">
+            <label class="checklist-label">
+              <input type="checkbox" class="checklist-checkbox" data-key="departing-6" />
+              <span class="checklist-text">
+                Active l'alarme
+                <span class="checklist-note">Toutes les portes fermées — maison/sous-sol + garage</span>
+              </span>
+            </label>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 3 — COMMERCES
+    ═══════════════════════════════════════════════════ -->
+    <section class="content-section" id="commerces" aria-labelledby="commerces-heading">
+      <div class="section-inner">
+        <h2 id="commerces-heading" class="section-heading">
+          <span class="section-icon" aria-hidden="true">🛍️</span> Commerces
+        </h2>
+
+        <p class="section-tip">Pour les grandes courses : Sainte-Agathe (25 min, sortie 86 A-15) ou Saint-Donat (20 min nord).</p>
+
+        <div class="filter-bar" role="tablist" aria-label="Filtrer les commerces">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="commerces" data-value="all">Tout</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="commerces" data-value="alimentation">Alimentation</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="commerces" data-value="boissons">Boissons</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="commerces" data-value="depanneur">Dépanneur</button>
+        </div>
+
+        <div class="cards-grid" id="commerces-grid">
+
+          <div class="place-card" data-category="alimentation">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🥖</span>
+              <div>
+                <h3 class="place-name">Pain Voyons Donc</h3>
+                <span class="place-type">Boulangerie</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">10 km · 12 min</span>
+            </div>
+            <p class="place-note">Pizza le samedi soir</p>
+            <a href="https://maps.google.com/?q=Boulangerie+Pain+Voyons+Donc+Lantier+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-category="alimentation">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🥗</span>
+              <div>
+                <h3 class="place-name">Fraîchement Vrac</h3>
+                <span class="place-type">Épicerie</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">12 km · 14 min</span>
+            </div>
+            <p class="place-note">Café attenant</p>
+            <a href="https://maps.google.com/?q=Fraichement+Vrac+Lantier+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-category="depanneur">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">⛽</span>
+              <div>
+                <h3 class="place-name">Dépanneur</h3>
+                <span class="place-type">Dépanneur · Essence</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">15 km · 18 min</span>
+            </div>
+            <p class="place-note">&nbsp;</p>
+            <a href="https://maps.google.com/?q=Depanneur+Lantier+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-category="alimentation">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🛒</span>
+              <div>
+                <h3 class="place-name">Metro Sainte-Agathe</h3>
+                <span class="place-type">Épicerie</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">27 km · 27 min</span>
+            </div>
+            <p class="place-note">Sur la route de l'autoroute</p>
+            <a href="https://maps.google.com/?q=Metro+Sainte-Agathe-des-Monts+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-category="alimentation">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🛒</span>
+              <div>
+                <h3 class="place-name">Épicerie Bourassa</h3>
+                <span class="place-type">Épicerie entrepôt</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">27 km · 27 min</span>
+            </div>
+            <p class="place-note">Bons prix</p>
+            <a href="https://maps.google.com/?q=Epicerie+Bourassa+Sainte-Agathe-des-Monts+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-category="boissons">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🍺</span>
+              <div>
+                <h3 class="place-name">Brouemalt</h3>
+                <span class="place-type">Microbrasserie</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">19 km · 21 min</span>
+            </div>
+            <p class="place-note">&nbsp;</p>
+            <a href="https://maps.google.com/?q=Brasserie+Brouemalt+Saint-Donat+QC" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 4 — ACTIVITÉS
+    ═══════════════════════════════════════════════════ -->
+    <section class="content-section section-alt" id="activites" aria-labelledby="activites-heading">
+      <div class="section-inner">
+        <h2 id="activites-heading" class="section-heading">
+          <span class="section-icon" aria-hidden="true">🌿</span> Activités
+        </h2>
+
+        <!-- POI Map -->
+        <a href="https://tinyurl.com/m5tu8xph" target="_blank" rel="noopener" class="poi-map-btn" aria-label="Voir notre carte des points d'intérêt">
+          <span aria-hidden="true">🗺️</span> Voir notre carte des POI
+        </a>
+
+        <div class="filter-bar" role="tablist" aria-label="Filtrer par saison">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="activites" data-value="all">Tout</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="activites" data-value="ete">🌞 Été</button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="activites" data-value="hiver">❄️ Hiver</button>
+        </div>
+
+        <div class="cards-grid" id="activites-grid">
+
+          <div class="place-card" data-season="ete hiver">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🥾</span>
+              <div>
+                <h3 class="place-name">Mont Kaaikop</h3>
+                <span class="place-type">Randonnée</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">7 km · 21 min</span>
+              <span class="season-badge season-ete">Été</span>
+              <span class="season-badge season-hiver">Hiver</span>
+            </div>
+            <p class="place-note">Grand tour 12 km · Petit tour 6 km · Tour du lac</p>
+            <a href="https://maps.google.com/?q=Mont+Kaaikop+Quebec" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-season="ete hiver">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🥾</span>
+              <div>
+                <h3 class="place-name">Montagne Noire</h3>
+                <span class="place-type">Randonnée</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="place-distance">11 km · 13 min</span>
+              <span class="season-badge season-ete">Été</span>
+              <span class="season-badge season-hiver">Hiver</span>
+            </div>
+            <p class="place-note">Épave d'avion militaire de la WWII au sommet</p>
+            <a href="https://maps.google.com/?q=Montagne+Noire+Lantier+Quebec" target="_blank" rel="noopener" class="maps-btn">
+              Ouvrir dans Maps
+            </a>
+          </div>
+
+          <div class="place-card" data-season="ete">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🚣</span>
+              <div>
+                <h3 class="place-name">Kayaks</h3>
+                <span class="place-type">Sur place</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="season-badge season-ete">Été</span>
+            </div>
+            <p class="place-note">Entreposés à droite dans le sous-sol. Gilets de sauvetage sur les étagères à côté.</p>
+          </div>
+
+          <div class="place-card" data-season="ete hiver">
+            <div class="place-card-header">
+              <span class="place-emoji" aria-hidden="true">🚶</span>
+              <div>
+                <h3 class="place-name">Marche autour du chalet</h3>
+                <span class="place-type">Sur place</span>
+              </div>
+            </div>
+            <div class="place-meta">
+              <span class="season-badge season-ete">Été</span>
+              <span class="season-badge season-hiver">Hiver</span>
+            </div>
+            <p class="place-note">Tour du lac, sentier forestier, pistes de raquette/ski de fond à proximité</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         SECTION 5 — RÈGLES & INFOS
+    ═══════════════════════════════════════════════════ -->
+    <section class="content-section" id="regles" aria-labelledby="regles-heading">
+      <div class="section-inner">
+        <h2 id="regles-heading" class="section-heading">
+          <span class="section-icon" aria-hidden="true">📋</span> Règles &amp; Infos
+        </h2>
+
+        <!-- Règles de la maison -->
+        <div class="subsection">
+          <h3 class="subsection-heading">Règles de la maison</h3>
+          <div class="placeholder-block" aria-label="Contenu à venir">
+            <span class="placeholder-icon" aria-hidden="true">🔧</span>
+            <p>Les règles de la maison seront ajoutées prochainement.</p>
+          </div>
+        </div>
+
+        <!-- Urgences -->
+        <div class="subsection">
+          <h3 class="subsection-heading">Urgences</h3>
+          <div class="emergency-block">
+            <div class="emergency-address">
+              <span aria-hidden="true">📍</span>
+              <strong>1144 Chemin-des-Iles<br />Sainte-Lucie-des-Laurentides, QC</strong>
+            </div>
+            <a href="https://maps.google.com/?q=1144+Chemin-des-Iles+Sainte-Lucie-des-Laurentides+QC" target="_blank" rel="noopener" class="maps-btn emergency-maps-btn">
+              Ouvrir dans Maps
+            </a>
+            <div class="placeholder-block placeholder-block--inline" aria-label="Contenu à venir">
+              <span class="placeholder-icon" aria-hidden="true">🔧</span>
+              <p>Informations d'urgence supplémentaires à venir.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Bienvenue à <span data-chalet-name="Coco Chalet">Coco Chalet</span> — profitez bien !</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
